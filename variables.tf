@@ -238,3 +238,9 @@ variable "description" {
   description = "Description of the resource, if empty, description = id"
   default =     null
 }
+
+variable "region" {
+  type =        string
+  description = "The region in which the resource will be created"
+  default =     null
+}

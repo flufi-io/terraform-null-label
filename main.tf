@@ -171,6 +171,7 @@ locals {
   
   
   description =    var.description != null ? var.description : local.id
+  region =         var.region
   # Context of this label to pass to other label modules
   output_context = {
 	enabled =             local.enabled
@@ -191,6 +192,7 @@ locals {
 	labels_as_tags =      local.labels_as_tags
 	descriptor_formats =  local.descriptor_formats
 	description =         local.description
+	output =              local.region
   }
   
 }

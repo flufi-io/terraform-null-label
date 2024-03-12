@@ -104,3 +104,8 @@ output "description" {
   value =       local.description
   description = "Description of the module"
 }
+
+output "region" {
+  value =       local.region
+  description = "The region in which the resources will be created"
+}
